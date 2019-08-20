@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/fragment_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg" />
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dcdcdc"
+        android:orientation="horizontal">
+        
+        <RadioButton
+            android:id="@+id/first_page"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:text="first"/>
+
+       <RadioButton
+            android:id="@+id/second_page"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:text="second"/>
+
+       <RadioButton
+            android:id="@+id/third_page"
+           android:layout_weight="0.25"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:text="third"/>
+
+      <RadioButton
+            android:id="@+id/forth_page"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"
+            android:layout_width="0dp"
+            android:text="fourth"/>
+
+    </RadioGroup>
+
+</RelativeLayout>
+
